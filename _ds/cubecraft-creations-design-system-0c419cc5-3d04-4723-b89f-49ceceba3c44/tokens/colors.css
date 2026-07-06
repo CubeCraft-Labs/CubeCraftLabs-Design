@@ -1,0 +1,80 @@
+/* ============================================================
+   CubeCraft Creations — Color Tokens
+   Brand gradient: cobalt blue #3B3AB8 → magenta purple #A035CC
+   ============================================================ */
+
+:root {
+  /* ── Brand Gradient ──────────────────────────────────────── */
+  --brand-blue:    #3B3AB8;   /* gradient start / logo blue  */
+  --brand-purple:  #A035CC;   /* gradient end  / logo purple */
+  --brand-gradient: linear-gradient(135deg, #3B3AB8 0%, #A035CC 100%); /* @kind color */
+  --brand-gradient-h: linear-gradient(90deg,  #3B3AB8 0%, #A035CC 100%); /* @kind color */
+
+  /* ── Primary ─────────────────────────────────────────────── */
+  --color-primary-50:   #EBEBF8;
+  --color-primary-100:  #CDCDF0;
+  --color-primary-200:  #9F9EE0;
+  --color-primary-300:  #7170D0;
+  --color-primary-400:  #5554CC;
+  --color-primary-500:  #3B3AB8;   /* base */
+  --color-primary-600:  #2D2C9A;
+  --color-primary-700:  #201F7A;
+  --color-primary-800:  #141358;
+  --color-primary-900:  #0A0938;
+
+  /* ── Accent (Purple) ─────────────────────────────────────── */
+  --color-accent-50:    #F6EAFD;
+  --color-accent-100:   #E8CBFA;
+  --color-accent-200:   #D49AF5;
+  --color-accent-300:   #C060E8;
+  --color-accent-400:   #B040D8;
+  --color-accent-500:   #A035CC;   /* base */
+  --color-accent-600:   #7D28A0;
+  --color-accent-700:   #5C1C78;
+  --color-accent-800:   #3C1050;
+  --color-accent-900:   #1E0828;
+
+  /* ── Neutral ─────────────────────────────────────────────── */
+  --color-neutral-0:    #FFFFFF;
+  --color-neutral-50:   #FAFAFA;
+  --color-neutral-100:  #F4F4F6;
+  --color-neutral-150:  #EDEDF1;
+  --color-neutral-200:  #E4E4EA;
+  --color-neutral-300:  #C8C8D4;
+  --color-neutral-400:  #9898A8;
+  --color-neutral-500:  #70707E;
+  --color-neutral-600:  #52525E;
+  --color-neutral-700:  #3C3C46;
+  --color-neutral-800:  #27272F;
+  --color-neutral-900:  #18181D;
+  --color-neutral-1000: #09090B;
+
+  /* ── Semantic Status ─────────────────────────────────────── */
+  --color-success:      #16A34A;
+  --color-success-bg:   #DCFCE7;
+  --color-warning:      #D97706;
+  --color-warning-bg:   #FEF3C7;
+  --color-error:        #DC2626;
+  --color-error-bg:     #FEE2E2;
+  --color-info:         #2563EB;
+  --color-info-bg:      #DBEAFE;
+
+  /* ── Semantic Aliases ────────────────────────────────────── */
+  --text-primary:       var(--color-neutral-900);
+  --text-secondary:     var(--color-neutral-600);
+  --text-muted:         var(--color-neutral-400);
+  --text-inverse:       var(--color-neutral-0);
+  --text-brand:         var(--brand-blue);
+  --text-accent:        var(--brand-purple);
+
+  --surface-page:       var(--color-neutral-0);
+  --surface-subtle:     var(--color-neutral-50);
+  --surface-card:       var(--color-neutral-0);
+  --surface-raised:     var(--color-neutral-0);
+  --surface-overlay:    rgba(9, 9, 11, 0.50);
+
+  --border-subtle:      var(--color-neutral-150);
+  --border-default:     var(--color-neutral-200);
+  --border-strong:      var(--color-neutral-300);
+  --border-brand:       var(--brand-blue);
+}

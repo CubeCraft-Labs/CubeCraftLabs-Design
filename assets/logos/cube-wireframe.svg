@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
+  <polygon points="100,44 146,70 100,96 54,70" fill="#e5c07b" fill-opacity="0.10"></polygon>
+  <polygon points="54,70 100,96 100,150 54,124" fill="#e5c07b" fill-opacity="0.045"></polygon>
+  <polygon points="146,70 100,96 100,150 146,124" fill="#e5c07b" fill-opacity="0.02"></polygon>
+  <g stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter" stroke-linecap="butt">
+    <polygon points="100,44 146,70 100,96 54,70" fill="none"></polygon>
+    <line x1="146" y1="70" x2="146" y2="124"></line>
+    <line x1="100" y1="96" x2="100" y2="150"></line>
+    <line x1="54" y1="70" x2="54" y2="124"></line>
+    <line x1="54" y1="124" x2="100" y2="150"></line>
+    <line x1="146" y1="124" x2="100" y2="150"></line>
+  </g>
+</svg>

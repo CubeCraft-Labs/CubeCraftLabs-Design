@@ -1,0 +1,55 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Core — Button, Badge, CubeMark" subtitle="Square, mono, gold-accented primitives" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../../styles.css" />
+<style>
+  body { margin: 0; background: #1a1a1a; color: #d4d4d4; font-family: 'JetBrains Mono', monospace; }
+  .wrap { padding: 24px; display: flex; flex-direction: column; gap: 22px; }
+  .row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .lbl { width: 78px; flex: none; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #6b6b6b; }
+</style>
+</head>
+<body>
+<div id="root" class="wrap"></div>
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="../../_ds_bundle.js"></script>
+<script type="text/babel" data-presets="react">
+  // Resolve the generated namespace defensively (name varies by project id).
+  function ns() {
+    for (const k of Object.keys(window)) {
+      const v = window[k];
+      if (v && typeof v === "object" && v.Button && v.Badge && v.CubeMark) return v;
+    }
+    return window;
+  }
+  const { Button, Badge, CubeMark } = ns();
+  const Row = ({ label, children }) => (
+    <div className="row"><div className="lbl">{label}</div>{children}</div>
+  );
+  ReactDOM.createRoot(document.getElementById("root")).render(
+    <React.Fragment>
+      <Row label="Buttons">
+        <Button variant="primary">Run build</Button>
+        <Button variant="secondary">Docs</Button>
+        <Button variant="ghost">Cancel</Button>
+        <Button variant="primary" disabled>Disabled</Button>
+      </Row>
+      <Row label="Badges">
+        <Badge>prototype</Badge>
+        <Badge tone="success">build passed</Badge>
+        <Badge tone="error">failed</Badge>
+        <Badge tone="muted">draft</Badge>
+      </Row>
+      <Row label="Cube">
+        <CubeMark variant="wireframe" size={56} />
+        <CubeMark variant="exploded" size={56} />
+        <CubeMark variant="grid" size={56} />
+      </Row>
+    </React.Fragment>
+  );
+</script>
+</body>
+</html>

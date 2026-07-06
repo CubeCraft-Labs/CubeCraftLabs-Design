@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="200" viewBox="0 0 640 200" fill="none">
+  <rect width="640" height="200" fill="#1a1a1a"></rect>
+  <g transform="translate(24,30)">
+    <polygon points="70,20 114,45 70,70 26,45" fill="#e5c07b" fill-opacity="0.14" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+    <polygon points="14,74 58,99 58,151 14,126" fill="#e5c07b" fill-opacity="0.05" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+    <polygon points="126,74 82,99 82,151 126,126" fill="#e5c07b" fill-opacity="0.02" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+    <g stroke="#e5c07b" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="3 4">
+      <line x1="70" y1="70" x2="70" y2="94"></line><line x1="58" y1="99" x2="67" y2="94"></line><line x1="82" y1="99" x2="73" y2="94"></line>
+    </g>
+  </g>
+  <text x="196" y="112" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="34" font-weight="800" letter-spacing="0.6" fill="#d4d4d4">CubeCraft<tspan fill="#e5c07b">Labs</tspan></text>
+  <rect x="556" y="86" width="14" height="30" fill="#e5c07b"></rect>
+</svg>

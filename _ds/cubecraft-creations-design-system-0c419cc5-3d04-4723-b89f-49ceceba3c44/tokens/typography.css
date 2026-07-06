@@ -1,0 +1,97 @@
+/* ============================================================
+   CubeCraft Creations — Typography Tokens
+   Primary typeface: Nunito (rounded, friendly, playful)
+   ============================================================ */
+
+:root {
+  /* ── Font Families ───────────────────────────────────────── */
+  --font-primary:   'Nunito', 'Nunito Fallback', system-ui, sans-serif;
+  --font-mono:      'SFMono-Regular', 'Consolas', 'Liberation Mono', monospace;
+
+  /* ── Font Weights ────────────────────────────────────────── */
+  --fw-light:       300; /* @kind other */
+  --fw-regular:     400; /* @kind other */
+  --fw-medium:      500; /* @kind other */
+  --fw-semibold:    600; /* @kind other */
+  --fw-bold:        700; /* @kind other */
+  --fw-extrabold:   800; /* @kind other */
+  --fw-black:       900; /* @kind other */
+
+  /* ── Font Sizes — base 16px, 1.25 type scale ─────────────── */
+  --text-xs:        0.75rem;    /* 12px */
+  --text-sm:        0.875rem;   /* 14px */
+  --text-base:      1rem;       /* 16px */
+  --text-md:        1.125rem;   /* 18px */
+  --text-lg:        1.25rem;    /* 20px */
+  --text-xl:        1.5rem;     /* 24px */
+  --text-2xl:       1.875rem;   /* 30px */
+  --text-3xl:       2.25rem;    /* 36px */
+  --text-4xl:       3rem;       /* 48px */
+  --text-5xl:       3.75rem;    /* 60px */
+  --text-6xl:       4.5rem;     /* 72px */
+
+  /* ── Line Heights ────────────────────────────────────────── */
+  --lh-tight:       1.2; /* @kind other */
+  --lh-snug:        1.35; /* @kind other */
+  --lh-normal:      1.5; /* @kind other */
+  --lh-relaxed:     1.65; /* @kind other */
+  --lh-loose:       2.0; /* @kind other */
+
+  /* ── Letter Spacing ──────────────────────────────────────── */
+  --ls-tight:       -0.03em; /* @kind other */
+  --ls-snug:        -0.01em; /* @kind other */
+  --ls-normal:      0em; /* @kind other */
+  --ls-wide:        0.02em; /* @kind other */
+  --ls-wider:       0.05em; /* @kind other */
+  --ls-widest:      0.12em; /* @kind other */
+
+  /* ── Semantic Role Aliases ───────────────────────────────── */
+  /* Display — hero headlines, splash copy */
+  --type-display-family:  var(--font-primary);
+  --type-display-weight:  var(--fw-extrabold);
+  --type-display-size:    var(--text-5xl);
+  --type-display-lh:      var(--lh-tight);
+  --type-display-ls:      var(--ls-tight);
+
+  /* Heading 1 */
+  --type-h1-family:       var(--font-primary);
+  --type-h1-weight:       var(--fw-extrabold);
+  --type-h1-size:         var(--text-4xl);
+  --type-h1-lh:           var(--lh-tight);
+  --type-h1-ls:           var(--ls-snug);
+
+  /* Heading 2 */
+  --type-h2-weight:       var(--fw-bold);
+  --type-h2-size:         var(--text-3xl);
+  --type-h2-lh:           var(--lh-snug);
+
+  /* Heading 3 */
+  --type-h3-weight:       var(--fw-bold);
+  --type-h3-size:         var(--text-2xl);
+  --type-h3-lh:           var(--lh-snug);
+
+  /* Heading 4 */
+  --type-h4-weight:       var(--fw-semibold);
+  --type-h4-size:         var(--text-xl);
+  --type-h4-lh:           var(--lh-normal);
+
+  /* Body */
+  --type-body-family:     var(--font-primary);
+  --type-body-weight:     var(--fw-regular);
+  --type-body-size:       var(--text-base);
+  --type-body-lh:         var(--lh-relaxed);
+
+  /* Body Large */
+  --type-body-lg-size:    var(--text-md);
+  --type-body-lg-lh:      var(--lh-relaxed);
+
+  /* Caption / Label */
+  --type-caption-weight:  var(--fw-semibold);
+  --type-caption-size:    var(--text-xs);
+  --type-caption-ls:      var(--ls-wider);
+
+  /* Button */
+  --type-btn-weight:      var(--fw-bold);
+  --type-btn-size:        var(--text-sm);
+  --type-btn-ls:          var(--ls-wide);
+}

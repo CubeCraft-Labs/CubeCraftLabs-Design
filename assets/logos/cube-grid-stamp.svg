@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
+  <g stroke="#333333" stroke-width="0.7">
+    <line x1="20" y1="20" x2="180" y2="20"></line><line x1="20" y1="52" x2="180" y2="52"></line><line x1="20" y1="84" x2="180" y2="84"></line><line x1="20" y1="116" x2="180" y2="116"></line><line x1="20" y1="148" x2="180" y2="148"></line><line x1="20" y1="180" x2="180" y2="180"></line>
+    <line x1="20" y1="20" x2="20" y2="180"></line><line x1="52" y1="20" x2="52" y2="180"></line><line x1="84" y1="20" x2="84" y2="180"></line><line x1="116" y1="20" x2="116" y2="180"></line><line x1="148" y1="20" x2="148" y2="180"></line><line x1="180" y1="20" x2="180" y2="180"></line>
+  </g>
+  <g stroke="#e5c07b" stroke-width="1" stroke-opacity="0.55">
+    <line x1="100" y1="10" x2="100" y2="26"></line><line x1="100" y1="174" x2="100" y2="190"></line><line x1="10" y1="100" x2="26" y2="100"></line><line x1="174" y1="100" x2="190" y2="100"></line>
+  </g>
+  <polygon points="100,48 144,73 100,98 56,73" fill="#e5c07b" fill-opacity="0.12"></polygon>
+  <polygon points="56,73 100,98 100,150 56,125" fill="#e5c07b" fill-opacity="0.05"></polygon>
+  <g stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter" stroke-linecap="butt">
+    <polygon points="100,48 144,73 100,98 56,73" fill="none"></polygon>
+    <line x1="144" y1="73" x2="144" y2="125"></line><line x1="100" y1="98" x2="100" y2="150"></line><line x1="56" y1="73" x2="56" y2="125"></line><line x1="56" y1="125" x2="100" y2="150"></line><line x1="144" y1="125" x2="100" y2="150"></line>
+  </g>
+</svg>

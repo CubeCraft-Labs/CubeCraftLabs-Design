@@ -1,0 +1,34 @@
+/* CubeCraftLabs — Color tokens
+   A dark, technical "workshop bench" palette. Charcoal ground, gold as the
+   single brand accent, terminal-style green/red for status. Deliberately
+   NOT the CubeCraft Creations blue→purple gradient. */
+:root {
+  /* --- Base scale --- */
+  --ccl-charcoal:      #1a1a1a; /* page background */
+  --ccl-charcoal-2:    #202020; /* raised surface */
+  --ccl-charcoal-3:    #262626; /* input / code block */
+  --ccl-gold:          #e5c07b; /* brand accent + logo mark */
+  --ccl-gold-dim:      #caa869; /* gold hover / pressed */
+  --ccl-text:          #d4d4d4; /* primary text */
+  --ccl-text-muted:    #6b6b6b; /* secondary text */
+  --ccl-border:        #2a2a2a; /* hairline borders */
+  --ccl-border-2:      #333333; /* stronger border / grid lines */
+  --ccl-green:         #98c379; /* success */
+  --ccl-red:           #e06c75; /* error */
+  --ccl-white:         #ffffff;
+
+  /* --- Semantic aliases --- */
+  --surface-page:      var(--ccl-charcoal);
+  --surface-raised:    var(--ccl-charcoal-2);
+  --surface-code:      var(--ccl-charcoal-3);
+  --text-primary:      var(--ccl-text);
+  --text-secondary:    var(--ccl-text-muted);
+  --text-on-gold:      var(--ccl-charcoal);
+  --accent:            var(--ccl-gold);
+  --accent-hover:      var(--ccl-gold-dim);
+  --border-hairline:   var(--ccl-border);
+  --border-strong:     var(--ccl-border-2);
+  --status-success:    var(--ccl-green);
+  --status-error:      var(--ccl-red);
+  --focus-ring:        var(--ccl-gold);
+}

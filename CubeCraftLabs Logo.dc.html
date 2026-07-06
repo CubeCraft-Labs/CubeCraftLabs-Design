@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
+</helmet>
+
+<!-- ================= SYSTEM SHEET ================= -->
+<div style="position:absolute; left:0px; top:0px; width:1760px">
+  <div data-drags-parent="1" style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#6b6b6b; margin-bottom:14px">CubeCraftLabs — identity system</div>
+  <div style="background:#1a1a1a; border:1px solid #2a2a2a; padding:56px; display:flex; flex-direction:column; gap:48px">
+
+    <div style="display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:24px">
+
+      <!-- PRIMARY -->
+      <div style="border:1px solid #2a2a2a; display:flex; flex-direction:column">
+        <div style="padding:10px 16px; border-bottom:1px solid #2a2a2a; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#6b6b6b">Primary — exploded cube</div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:26px; padding:48px 32px">
+          <svg width="190" height="190" viewBox="0 0 200 200" fill="none" style="display:block">
+            <polygon points="100,26 144,51 100,76 56,51" fill="#e5c07b" fill-opacity="0.14" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+            <polygon points="44,80 88,105 88,157 44,132" fill="#e5c07b" fill-opacity="0.05" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+            <polygon points="156,80 112,105 112,157 156,132" fill="#e5c07b" fill-opacity="0.02" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+            <g stroke="#e5c07b" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="3 4" stroke-linecap="butt">
+              <line x1="100" y1="76" x2="100" y2="100"></line>
+              <line x1="88" y1="105" x2="97" y2="100"></line>
+              <line x1="112" y1="105" x2="103" y2="100"></line>
+            </g>
+            <g stroke="#e5c07b" stroke-width="1" stroke-opacity="0.22">
+              <polygon points="100,82 117,91 100,100 83,91" fill="none"></polygon>
+              <line x1="83" y1="91" x2="83" y2="110"></line>
+              <line x1="117" y1="91" x2="117" y2="110"></line>
+              <line x1="100" y1="100" x2="100" y2="119"></line>
+              <line x1="83" y1="110" x2="100" y2="119"></line>
+              <line x1="117" y1="110" x2="100" y2="119"></line>
+            </g>
+          </svg>
+          <div style="font-family:'JetBrains Mono',monospace; font-weight:800; font-size:26px; letter-spacing:0.02em; color:#d4d4d4">CubeCraft<span style="color:#e5c07b">Labs</span><span style="display:inline-block; width:13px; height:26px; background:#e5c07b; margin-left:8px; vertical-align:-3px"></span></div>
+        </div>
+      </div>
+
+      <!-- INLINE -->
+      <div style="border:1px solid #2a2a2a; display:flex; flex-direction:column">
+        <div style="padding:10px 16px; border-bottom:1px solid #2a2a2a; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#6b6b6b">Inline — monoline</div>
+        <div style="flex:1; display:flex; align-items:center; justify-content:center; gap:14px; padding:48px 24px">
+          <svg width="44" height="44" viewBox="0 0 200 200" fill="none" style="display:block; flex:none">
+            <polygon points="100,44 146,70 100,96 54,70" fill="#e5c07b" fill-opacity="0.10"></polygon>
+            <g stroke="#e5c07b" stroke-width="4.5" stroke-linejoin="miter" stroke-linecap="butt">
+              <polygon points="100,44 146,70 100,96 54,70" fill="none"></polygon>
+              <line x1="146" y1="70" x2="146" y2="124"></line>
+              <line x1="100" y1="96" x2="100" y2="150"></line>
+              <line x1="54" y1="70" x2="54" y2="124"></line>
+              <line x1="54" y1="124" x2="100" y2="150"></line>
+              <line x1="146" y1="124" x2="100" y2="150"></line>
+            </g>
+          </svg>
+          <div style="font-family:'JetBrains Mono',monospace; font-weight:800; font-size:16px; letter-spacing:0.02em; color:#d4d4d4">CubeCraft<span style="color:#e5c07b">Labs</span></div>
+          <div style="width:8px; height:18px; background:#e5c07b; flex:none"></div>
+        </div>
+      </div>
+
+      <!-- BADGE -->
+      <div style="border:1px solid #2a2a2a; display:flex; flex-direction:column">
+        <div style="padding:10px 16px; border-bottom:1px solid #2a2a2a; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#6b6b6b">Badge — grid stamp</div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px; padding:40px 24px">
+          <svg width="160" height="160" viewBox="0 0 200 200" fill="none" style="display:block">
+            <g stroke="#333" stroke-width="0.7">
+              <line x1="20" y1="20" x2="180" y2="20"></line>
+              <line x1="20" y1="52" x2="180" y2="52"></line>
+              <line x1="20" y1="84" x2="180" y2="84"></line>
+              <line x1="20" y1="116" x2="180" y2="116"></line>
+              <line x1="20" y1="148" x2="180" y2="148"></line>
+              <line x1="20" y1="180" x2="180" y2="180"></line>
+              <line x1="20" y1="20" x2="20" y2="180"></line>
+              <line x1="52" y1="20" x2="52" y2="180"></line>
+              <line x1="84" y1="20" x2="84" y2="180"></line>
+              <line x1="116" y1="20" x2="116" y2="180"></line>
+              <line x1="148" y1="20" x2="148" y2="180"></line>
+              <line x1="180" y1="20" x2="180" y2="180"></line>
+            </g>
+            <g stroke="#e5c07b" stroke-width="1" stroke-opacity="0.55">
+              <line x1="100" y1="10" x2="100" y2="26"></line>
+              <line x1="100" y1="174" x2="100" y2="190"></line>
+              <line x1="10" y1="100" x2="26" y2="100"></line>
+              <line x1="174" y1="100" x2="190" y2="100"></line>
+            </g>
+            <polygon points="100,48 144,73 100,98 56,73" fill="#1a1a1a"></polygon>
+            <polygon points="56,73 100,98 100,150 56,125" fill="#1a1a1a"></polygon>
+            <polygon points="144,73 100,98 100,150 144,125" fill="#1a1a1a"></polygon>
+            <polygon points="100,48 144,73 100,98 56,73" fill="#e5c07b" fill-opacity="0.12"></polygon>
+            <polygon points="56,73 100,98 100,150 56,125" fill="#e5c07b" fill-opacity="0.05"></polygon>
+            <g stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter" stroke-linecap="butt">
+              <polygon points="100,48 144,73 100,98 56,73" fill="none"></polygon>
+              <line x1="144" y1="73" x2="144" y2="125"></line>
+              <line x1="100" y1="98" x2="100" y2="150"></line>
+              <line x1="56" y1="73" x2="56" y2="125"></line>
+              <line x1="56" y1="125" x2="100" y2="150"></line>
+              <line x1="144" y1="125" x2="100" y2="150"></line>
+            </g>
+          </svg>
+          <div style="display:flex; align-items:baseline; gap:0">
+            <div style="font-family:'JetBrains Mono',monospace; font-weight:800; font-size:16px; letter-spacing:0.02em; color:#d4d4d4">CubeCraft</div><div style="font-family:'JetBrains Mono',monospace; font-weight:800; font-size:16px; letter-spacing:0.02em; color:#e5c07b; border:1.5px solid #e5c07b; padding:0 6px">Labs</div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEB HEADER -->
+    <div style="border:1px solid #2a2a2a">
+      <div style="padding:10px 16px; border-bottom:1px solid #2a2a2a; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#6b6b6b">Web header — terminal treatment</div>
+      <div style="display:flex; align-items:center; gap:20px; padding:18px 28px">
+        <svg width="34" height="34" viewBox="0 0 200 200" fill="none" style="display:block; flex:none">
+          <polygon points="100,44 146,70 100,96 54,70" fill="#e5c07b" fill-opacity="0.10"></polygon>
+          <g stroke="#e5c07b" stroke-width="5" stroke-linejoin="miter" stroke-linecap="butt">
+            <polygon points="100,44 146,70 100,96 54,70" fill="none"></polygon>
+            <line x1="146" y1="70" x2="146" y2="124"></line>
+            <line x1="100" y1="96" x2="100" y2="150"></line>
+            <line x1="54" y1="70" x2="54" y2="124"></line>
+            <line x1="54" y1="124" x2="100" y2="150"></line>
+            <line x1="146" y1="124" x2="100" y2="150"></line>
+          </g>
+        </svg>
+        <div style="font-family:'JetBrains Mono',monospace; font-weight:800; font-size:18px; color:#d4d4d4"><span style="color:#98c379">$</span> CubeCraft<span style="color:#e5c07b">Labs</span><span style="display:inline-block; width:9px; height:17px; background:#e5c07b; margin-left:6px; vertical-align:-2px"></span></div>
+        <div style="margin-left:auto; display:flex; gap:32px; font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#d4d4d4">
+          <span style="color:#e5c07b">Projects</span><span>Workshop</span><span>Prints</span><span>About</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPEC STRIP -->
+    <div style="display:flex; align-items:center; gap:40px; border-top:1px solid #2a2a2a; padding-top:28px">
+      <div style="display:flex; gap:12px">
+        <div style="display:flex; flex-direction:column; gap:6px; align-items:center">
+          <div style="width:44px; height:44px; background:#1a1a1a; border:1px solid #333"></div>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#6b6b6b">#1a1a1a</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:6px; align-items:center">
+          <div style="width:44px; height:44px; background:#e5c07b"></div>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#6b6b6b">#e5c07b</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:6px; align-items:center">
+          <div style="width:44px; height:44px; background:#d4d4d4"></div>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#6b6b6b">#d4d4d4</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:6px; align-items:center">
+          <div style="width:44px; height:44px; background:#98c379"></div>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#6b6b6b">#98c379</div>
+        </div>
+      </div>
+      <div style="width:1px; height:56px; background:#2a2a2a"></div>
+      <div style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#d4d4d4; line-height:1.7">JetBrains Mono · square corners · 0.08em tracking on caps<br><span style="color:#6b6b6b">One cube geometry across all marks — exploded for primary, assembled elsewhere.</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= 06 — EXPLODED CUBE (refined) ================= -->
+<div style="position:absolute; left:0px; top:1120px; width:460px">
+  <div data-drags-parent="1" style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#6b6b6b; margin-bottom:14px">06 — Exploded cube · primary</div>
+  <div style="background:#1a1a1a; border:1px solid #2a2a2a; padding:56px 40px; display:flex; flex-direction:column; align-items:center; gap:36px">
+    <svg width="230" height="230" viewBox="0 0 200 200" fill="none" style="display:block">
+      <polygon points="100,26 144,51 100,76 56,51" fill="#e5c07b" fill-opacity="0.14" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+      <polygon points="44,80 88,105 88,157 44,132" fill="#e5c07b" fill-opacity="0.05" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+      <polygon points="156,80 112,105 112,157 156,132" fill="#e5c07b" fill-opacity="0.02" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+      <g stroke="#e5c07b" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="3 4" stroke-linecap="butt">
+        <line x1="100" y1="76" x2="100" y2="100"></line>
+        <line x1="88" y1="105" x2="97" y2="100"></line>
+        <line x1="112" y1="105" x2="103" y2="100"></line>
+      </g>
+      <g stroke="#e5c07b" stroke-width="1" stroke-opacity="0.22">
+        <polygon points="100,82 117,91 100,100 83,91" fill="none"></polygon>
+        <line x1="83" y1="91" x2="83" y2="110"></line>
+        <line x1="117" y1="91" x2="117" y2="110"></line>
+        <line x1="100" y1="100" x2="100" y2="119"></line>
+        <line x1="83" y1="110" x2="100" y2="119"></line>
+        <line x1="117" y1="110" x2="100" y2="119"></line>
+      </g>
+    </svg>
+    <div style="font-family:'JetBrains Mono',monospace; font-weight:800; font-size:28px; letter-spacing:0.02em; color:#d4d4d4">CubeCraft<span style="color:#e5c07b">Labs</span><span style="display:inline-block; width:14px; height:28px; background:#e5c07b; margin-left:8px; vertical-align:-3px"></span></div>
+  </div>
+</div>
+
+<!-- ================= 04 — MINIMAL MONOLINE (refined) ================= -->
+<div style="position:absolute; left:580px; top:1120px; width:620px">
+  <div data-drags-parent="1" style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#6b6b6b; margin-bottom:14px">04 — Minimal monoline · inline</div>
+  <div style="background:#1a1a1a; border:1px solid #2a2a2a; padding:64px 48px; display:flex; align-items:center; justify-content:center; gap:18px">
+    <svg width="60" height="60" viewBox="0 0 200 200" fill="none" style="display:block; flex:none">
+      <polygon points="100,44 146,70 100,96 54,70" fill="#e5c07b" fill-opacity="0.10"></polygon>
+      <g stroke="#e5c07b" stroke-width="4.5" stroke-linejoin="miter" stroke-linecap="butt">
+        <polygon points="100,44 146,70 100,96 54,70" fill="none"></polygon>
+        <line x1="146" y1="70" x2="146" y2="124"></line>
+        <line x1="100" y1="96" x2="100" y2="150"></line>
+        <line x1="54" y1="70" x2="54" y2="124"></line>
+        <line x1="54" y1="124" x2="100" y2="150"></line>
+        <line x1="146" y1="124" x2="100" y2="150"></line>
+      </g>
+    </svg>
+    <div style="font-family:'JetBrains Mono',monospace; font-weight:800; font-size:22px; letter-spacing:0.02em; color:#d4d4d4">CubeCraft{{ wordSep }}<span style="color:#e5c07b">Labs</span></div>
+    <div style="width:11px; height:24px; background:#e5c07b; flex:none"></div>
+  </div>
+</div>
+
+<!-- ================= 07 — TERMINAL PROMPT (refined) ================= -->
+<div style="position:absolute; left:1300px; top:1120px; width:640px">
+  <div data-drags-parent="1" style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#6b6b6b; margin-bottom:14px">07 — Terminal prompt · web</div>
+  <div style="background:#1a1a1a; border:1px solid #2a2a2a; padding:72px 56px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:28px">
+    <div style="border:1px solid #333; width:100%">
+      <div style="display:flex; align-items:center; gap:8px; padding:10px 14px; border-bottom:1px solid #2a2a2a">
+        <div style="width:8px; height:8px; background:#e06c75"></div>
+        <div style="width:8px; height:8px; background:#e5c07b"></div>
+        <div style="width:8px; height:8px; background:#98c379"></div>
+        <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.08em; color:#6b6b6b; margin-left:auto">~/labs</div>
+      </div>
+      <div style="padding:30px 26px; display:flex; flex-direction:column; gap:14px">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:15px; color:#6b6b6b"><span style="color:#98c379">$</span> make cubecraft <span style="color:#e5c07b">--labs</span></div>
+        <div style="display:flex; align-items:center; gap:16px">
+          <svg width="52" height="52" viewBox="0 0 200 200" fill="none" style="display:block; flex:none">
+            <polygon points="100,44 146,70 100,96 54,70" fill="#e5c07b" fill-opacity="0.10"></polygon>
+            <g stroke="#e5c07b" stroke-width="4" stroke-linejoin="miter" stroke-linecap="butt">
+              <polygon points="100,44 146,70 100,96 54,70" fill="none"></polygon>
+              <line x1="146" y1="70" x2="146" y2="124"></line>
+              <line x1="100" y1="96" x2="100" y2="150"></line>
+              <line x1="54" y1="70" x2="54" y2="124"></line>
+              <line x1="54" y1="124" x2="100" y2="150"></line>
+              <line x1="146" y1="124" x2="100" y2="150"></line>
+            </g>
+          </svg>
+          <div style="font-family:'JetBrains Mono',monospace; font-weight:800; font-size:28px; letter-spacing:0.02em; color:#d4d4d4">CubeCraft<span style="color:#e5c07b">Labs</span><span style="display:inline-block; width:14px; height:28px; background:#e5c07b; margin-left:8px; vertical-align:-3px"></span></div>
+        </div>
+        <div style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#98c379">✓ build complete</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= 08 — GRID STAMP (refined) ================= -->
+<div style="position:absolute; left:2020px; top:1120px; width:460px">
+  <div data-drags-parent="1" style="font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:#6b6b6b; margin-bottom:14px">08 — Grid stamp · badge</div>
+  <div style="background:#1a1a1a; border:1px solid #2a2a2a; padding:56px 40px; display:flex; flex-direction:column; align-items:center; gap:36px">
+    <svg width="230" height="230" viewBox="0 0 200 200" fill="none" style="display:block">
+      <g stroke="#333" stroke-width="0.7">
+        <line x1="20" y1="20" x2="180" y2="20"></line>
+        <line x1="20" y1="52" x2="180" y2="52"></line>
+        <line x1="20" y1="84" x2="180" y2="84"></line>
+        <line x1="20" y1="116" x2="180" y2="116"></line>
+        <line x1="20" y1="148" x2="180" y2="148"></line>
+        <line x1="20" y1="180" x2="180" y2="180"></line>
+        <line x1="20" y1="20" x2="20" y2="180"></line>
+        <line x1="52" y1="20" x2="52" y2="180"></line>
+        <line x1="84" y1="20" x2="84" y2="180"></line>
+        <line x1="116" y1="20" x2="116" y2="180"></line>
+        <line x1="148" y1="20" x2="148" y2="180"></line>
+        <line x1="180" y1="20" x2="180" y2="180"></line>
+      </g>
+      <g stroke="#e5c07b" stroke-width="1" stroke-opacity="0.55">
+        <line x1="100" y1="10" x2="100" y2="26"></line>
+        <line x1="100" y1="174" x2="100" y2="190"></line>
+        <line x1="10" y1="100" x2="26" y2="100"></line>
+        <line x1="174" y1="100" x2="190" y2="100"></line>
+      </g>
+      <polygon points="100,48 144,73 100,98 56,73" fill="#1a1a1a"></polygon>
+      <polygon points="56,73 100,98 100,150 56,125" fill="#1a1a1a"></polygon>
+      <polygon points="144,73 100,98 100,150 144,125" fill="#1a1a1a"></polygon>
+      <polygon points="100,48 144,73 100,98 56,73" fill="#e5c07b" fill-opacity="0.12"></polygon>
+      <polygon points="56,73 100,98 100,150 56,125" fill="#e5c07b" fill-opacity="0.05"></polygon>
+      <g stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter" stroke-linecap="butt">
+        <polygon points="100,48 144,73 100,98 56,73" fill="none"></polygon>
+        <line x1="144" y1="73" x2="144" y2="125"></line>
+        <line x1="100" y1="98" x2="100" y2="150"></line>
+        <line x1="56" y1="73" x2="56" y2="125"></line>
+        <line x1="56" y1="125" x2="100" y2="150"></line>
+        <line x1="144" y1="125" x2="100" y2="150"></line>
+      </g>
+    </svg>
+    <div style="display:flex; align-items:baseline; gap:0">
+      <div style="font-family:'JetBrains Mono',monospace; font-weight:800; font-size:24px; letter-spacing:0.02em; color:#d4d4d4">CubeCraft</div>
+      <div style="font-family:'JetBrains Mono',monospace; font-weight:800; font-size:24px; letter-spacing:0.02em; color:#e5c07b; border:2px solid #e5c07b; padding:0 8px">Labs</div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;wordSpace&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: false, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Wordmark&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      wordSep: (this.props.wordSpace ?? false) ? " " : ""
+    };
+  }
+}
+</script>
+</body>
+</html>

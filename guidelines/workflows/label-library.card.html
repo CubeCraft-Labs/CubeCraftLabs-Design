@@ -1,0 +1,96 @@
+<!-- @dsCard group="Workflows" viewport="1120x560" name="Label Library" subtitle="Persisted labels · reprint any time" -->
+<!doctype html><html><head><meta charset="utf8"><title>Label Library — mockup</title>
+<style>
+  :root{--charcoal:#1a1a1a;--charcoal-2:#202020;--charcoal-3:#262626;--gold:#e5c07b;--gold-dim:#caa869;
+    --text:#d4d4d4;--muted:#6b6b6b;--border:#2a2a2a;--border-2:#333;--green:#98c379;--red:#e06c75;
+    --mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,Consolas,monospace;}
+  *{box-sizing:border-box;} html,body{margin:0;background:var(--charcoal);color:var(--text);font-family:var(--mono);font-size:14px;}
+  header{background:var(--charcoal);padding:16px 22px 18px;border-bottom:2px solid var(--gold);display:flex;align-items:center;gap:14px;}
+  header svg{width:40px;height:40px;}
+  h1{font-size:18px;margin:0;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#fff;}
+  .sub{color:var(--muted);font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin-top:3px;}
+  main{max-width:1120px;margin:0 auto;padding:22px;}
+  /* segmented mode toggle */
+  .seg{display:inline-flex;border:1px solid var(--border-2);}
+  .seg button{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;padding:7px 16px;
+    background:transparent;color:var(--muted);border:none;border-right:1px solid var(--border-2);cursor:pointer;}
+  .seg button:last-child{border-right:none;}
+  .seg button.active{background:var(--gold);color:var(--charcoal);font-weight:700;}
+  .toolbar{display:flex;align-items:center;gap:8px;background:var(--charcoal-2);border:1px solid var(--border);padding:12px 14px;}
+  .toolbar button.act{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.05em;padding:7px 12px;
+    background:transparent;color:var(--text);border:1px solid var(--border-2);cursor:pointer;}
+  .toolbar button.danger{color:var(--red);border-color:#4a2b2e;}
+  .spacer{flex:1;}
+  .search{font-family:var(--mono);font-size:12px;background:var(--charcoal-3);color:var(--text);border:1px solid var(--border-2);padding:6px 10px;width:210px;}
+  .search::placeholder{color:var(--muted);}
+  label.tg{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;}
+  .tg select{font-family:var(--mono);font-size:12px;text-transform:uppercase;background:var(--charcoal-3);color:var(--text);border:1px solid var(--border-2);padding:4px 6px;}
+  .counts{display:flex;gap:26px;margin:20px 2px;}
+  .stat b{font-size:24px;font-weight:700;display:block;line-height:1;}
+  .stat span{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);}
+  .stat.ok b{color:var(--green);} .stat.warn b{color:var(--gold);}
+  .wrap{background:var(--charcoal-2);border:1px solid var(--border);}
+  table{width:100%;border-collapse:collapse;}
+  th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:10px 12px;border-bottom:1px solid var(--border-2);background:var(--charcoal-3);}
+  td{padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:middle;}
+  .iname{font-weight:700;} .vname{color:var(--muted);font-size:12px;}
+  .m{font-size:12px;} .muted{color:var(--muted);}
+  .thumb{background:#fff;padding:2px;display:inline-block;}
+  input[type=checkbox]{width:15px;height:15px;accent-color:var(--gold);}
+  .chip{font-size:10px;letter-spacing:.05em;padding:2px 7px;border:1px solid currentColor;}
+  .chip.printed{color:var(--green);} .chip.new{color:var(--gold);}
+  .note{color:var(--muted);font-size:12px;margin-top:18px;line-height:1.6;}
+  .kbd{background:var(--charcoal-3);color:var(--gold);padding:1px 5px;}
+</style></head><body>
+<header>
+  <svg viewBox="0 0 200 200" fill="none"><polygon points="100,44 146,70 100,96 54,70" fill="#e5c07b" fill-opacity=".12"/><polygon points="146,70 100,96 100,150 146,124" fill="#e5c07b" fill-opacity=".04"/><g transform="matrix(46,26,0,54,54,70)"><rect x=".06" y=".06" width=".05" height=".88" fill="#e5c07b" fill-opacity=".85"/><rect x=".24" y=".06" width=".07" height=".88" fill="#e5c07b" fill-opacity=".85"/><rect x=".46" y=".06" width=".05" height=".88" fill="#e5c07b" fill-opacity=".85"/><rect x=".66" y=".06" width=".075" height=".88" fill="#e5c07b" fill-opacity=".85"/><rect x=".88" y=".06" width=".05" height=".88" fill="#e5c07b" fill-opacity=".85"/></g><g stroke="#e5c07b" stroke-width="2.4" fill="none"><polygon points="100,44 146,70 100,96 54,70"/><line x1="146" y1="70" x2="146" y2="124"/><line x1="100" y1="96" x2="100" y2="150"/><line x1="54" y1="70" x2="54" y2="124"/><line x1="54" y1="124" x2="100" y2="150"/><line x1="146" y1="124" x2="100" y2="150"/></g><rect x="28" y="95" width="144" height="4.5" fill="#e5c07b"/></svg>
+  <div><h1>Barcode Generator</h1><div class="sub">Label Library · saved locally · reprint any time</div></div>
+</header>
+<main>
+  <div style="margin-bottom:14px;"><div class="seg"><button>Catalog</button><button class="active">Labels · 6</button></div></div>
+  <div class="toolbar">
+    <button class="act">Print labels</button>
+    <button class="act">Export CSV</button>
+    <button class="act danger">Delete</button>
+    <button class="act">Refresh from Square</button>
+    <div class="spacer"></div>
+    <input class="search" placeholder="search item / GTIN…">
+    <label class="tg">Label <select><option>Portrait</option><option>Landscape</option></select></label>
+  </div>
+  <div class="counts">
+    <div class="stat"><b>6</b><span>Labels</span></div>
+    <div class="stat ok"><b>3</b><span>Printed</span></div>
+    <div class="stat warn"><b>3</b><span>Never printed</span></div>
+    <div class="stat"><b>2</b><span>Selected</span></div>
+  </div>
+  <div class="wrap"><table>
+    <thead><tr><th style="width:34px"><input type="checkbox"></th><th>Item / Variation</th><th>GTIN</th><th>Barcode</th><th>Created</th><th>Last printed</th><th>Prints</th><th>Status</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table></div>
+  <div class="note">
+    <b style="color:var(--text)">How it works &mdash;</b> Whenever you generate a barcode (or write a GTIN) in <span class="kbd">Catalog</span>, the label is saved here automatically. Come back any time, <span class="kbd">select</span> the labels you need, and <span class="kbd">Print</span> &mdash; no Square pull or re-generate required. <b style="color:var(--text)">Refresh from Square</b> re-checks names/GTINs so the library stays in sync.
+  </div>
+</main>
+<script>
+function bars(code){
+  var w=[3,1,2,4,1,3,2,1,4,2,1,3,1,2,4,1,2,3,1,2,1,4,2,1,3,1,2]; var x=4,svg='';
+  for(var i=0;i<w.length;i++){ if(i%2===0)svg+='<rect x="'+x+'" y="3" width="'+w[i]+'" height="24" fill="#000"/>'; x+=w[i]+1; }
+  return '<span class="thumb"><svg width="'+ (x+4) +'" height="40"><rect width="100%" height="100%" fill="#fff"/>'+svg+'<text x="'+((x+4)/2)+'" y="37" font-size="8" text-anchor="middle" font-family="monospace">'+code+'</text></svg></span>';
+}
+var data=[
+  ['3DBenchy Calibration Boat','Regular','267711949947','Jul 6','Jul 6','2','printed',true],
+  ['Hex Bit Keychain','Regular','012345678905','Jul 5','Jul 6','5','printed',true],
+  ['Custom Desk Nameplate','Red','268284646417','Jul 4','Jul 6','1','printed',false],
+  ['PLA Filament Spool 1kg','Black','234223163642','Jul 5','—','0','new',false],
+  ['Cable Clip Set','Small (4pk)','036000291452','Jul 5','—','0','new',false],
+  ['Articulated Dragon','Large','214850813615','Jul 4','—','0','new',false],
+];
+document.getElementById('rows').innerHTML=data.map(function(r){
+  return '<tr><td><input type="checkbox"'+(r[7]?' checked':'')+'></td>'
+    +'<td><div class="iname">'+r[0]+'</div><div class="vname">'+r[1]+'</div></td>'
+    +'<td class="m">'+r[2]+'</td><td>'+bars(r[2])+'</td>'
+    +'<td class="m muted">'+r[3]+'</td><td class="m muted">'+r[4]+'</td><td class="m">'+r[5]+'</td>'
+    +'<td>'+(r[6]==='printed'?'<span class="chip printed">printed</span>':'<span class="chip new">never printed</span>')+'</td></tr>';
+}).join('');
+</script>
+</body></html>

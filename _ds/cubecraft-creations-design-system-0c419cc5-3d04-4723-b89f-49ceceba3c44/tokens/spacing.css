@@ -1,0 +1,86 @@
+/* ============================================================
+   CubeCraft Creations — Spacing & Layout Tokens
+   Base unit: 4px
+   ============================================================ */
+
+:root {
+  /* ── Spacing Scale ───────────────────────────────────────── */
+  --space-0:     0px;
+  --space-px:    1px;
+  --space-0-5:   2px;
+  --space-1:     4px;
+  --space-1-5:   6px;
+  --space-2:     8px;
+  --space-3:     12px;
+  --space-4:     16px;
+  --space-5:     20px;
+  --space-6:     24px;
+  --space-7:     28px;
+  --space-8:     32px;
+  --space-10:    40px;
+  --space-12:    48px;
+  --space-14:    56px;
+  --space-16:    64px;
+  --space-20:    80px;
+  --space-24:    96px;
+  --space-28:    112px;
+  --space-32:    128px;
+  --space-40:    160px;
+  --space-48:    192px;
+
+  /* ── Border Radius ───────────────────────────────────────── */
+  --radius-none:  0px;
+  --radius-xs:    4px;
+  --radius-sm:    6px;
+  --radius-md:    8px;
+  --radius-lg:    12px;
+  --radius-xl:    16px;
+  --radius-2xl:   20px;
+  --radius-3xl:   28px;
+  --radius-full:  9999px;
+
+  /* Logo icon uses a large rounded square — matches brand mark */
+  --radius-brand: 20px;
+
+  /* ── Shadows ─────────────────────────────────────────────── */
+  --shadow-xs:  0 1px 2px 0 rgba(0,0,0,0.06);
+  --shadow-sm:  0 2px 6px 0 rgba(0,0,0,0.08);
+  --shadow-md:  0 4px 12px 0 rgba(0,0,0,0.10);
+  --shadow-lg:  0 8px 24px 0 rgba(0,0,0,0.12);
+  --shadow-xl:  0 16px 48px 0 rgba(0,0,0,0.16);
+  --shadow-brand: 0 4px 20px 0 rgba(59,58,184,0.25);
+  --shadow-accent: 0 4px 20px 0 rgba(160,53,204,0.25);
+
+  /* ── Layout ─────────────────────────────────────────────── */
+  --container-sm:   640px;
+  --container-md:   768px;
+  --container-lg:   1024px;
+  --container-xl:   1280px;
+  --container-2xl:  1440px;
+
+  --header-height:  68px;
+  --nav-height:     44px;
+
+  /* ── Transitions ─────────────────────────────────────────── */
+  --ease-out:       cubic-bezier(0.0, 0.0, 0.2, 1.0); /* @kind other */
+  --ease-in:        cubic-bezier(0.4, 0.0, 1.0, 1.0); /* @kind other */
+  --ease-in-out:    cubic-bezier(0.4, 0.0, 0.2, 1.0); /* @kind other */
+  --ease-spring:    cubic-bezier(0.34, 1.56, 0.64, 1.0); /* @kind other */
+
+  --duration-fast:   120ms; /* @kind other */
+  --duration-base:   200ms; /* @kind other */
+  --duration-slow:   350ms; /* @kind other */
+
+  --transition-base:   all var(--duration-base) var(--ease-out); /* @kind other */
+  --transition-spring: all var(--duration-slow) var(--ease-spring); /* @kind other */
+
+  /* ── Z-Index ─────────────────────────────────────────────── */
+  --z-base:     0; /* @kind other */
+  --z-raised:   10; /* @kind other */
+  --z-dropdown: 100; /* @kind other */
+  --z-sticky:   200; /* @kind other */
+  --z-overlay:  300; /* @kind other */
+  --z-modal:    400; /* @kind other */
+  --z-toast:    500; /* @kind other */
+  --z-tooltip:  600; /* @kind other */
+}

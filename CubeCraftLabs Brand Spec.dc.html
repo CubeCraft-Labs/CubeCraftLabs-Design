@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; }
+</style>
+</helmet>
+
+<div style="background:#1a1a1a; min-height:100vh; font-family:'JetBrains Mono',monospace; color:#d4d4d4; padding:64px 56px; display:flex; flex-direction:column; gap:0; max-width:1080px; margin:0 auto">
+
+  <!-- ========== HEADER ========== -->
+  <div style="display:flex; align-items:center; gap:22px; padding-bottom:32px; border-bottom:1px solid #2a2a2a">
+    <svg width="60" height="60" viewBox="0 0 200 200" fill="none" style="display:block; flex:none">
+      <polygon points="100,44 146,70 100,96 54,70" fill="#e5c07b" fill-opacity="0.10"></polygon>
+      <g stroke="#e5c07b" stroke-width="4.5" stroke-linejoin="miter" stroke-linecap="butt">
+        <polygon points="100,44 146,70 100,96 54,70" fill="none"></polygon>
+        <line x1="146" y1="70" x2="146" y2="124"></line>
+        <line x1="100" y1="96" x2="100" y2="150"></line>
+        <line x1="54" y1="70" x2="54" y2="124"></line>
+        <line x1="54" y1="124" x2="100" y2="150"></line>
+        <line x1="146" y1="124" x2="100" y2="150"></line>
+      </g>
+    </svg>
+    <div style="display:flex; flex-direction:column; gap:6px">
+      <div style="font-weight:800; font-size:28px; letter-spacing:0.02em; color:#d4d4d4">CubeCraft<span style="color:#e5c07b">Labs</span></div>
+      <div style="font-size:12px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:#6b6b6b">Brand spec · v1 · the maker / R&D side</div>
+    </div>
+  </div>
+
+  <!-- ========== POSITIONING ========== -->
+  <div style="padding:34px 0; border-bottom:1px solid #2a2a2a">
+    <div style="font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#e5c07b; margin-bottom:16px">01 · Positioning</div>
+    <div style="font-size:15px; line-height:1.75; color:#d4d4d4; max-width:760px">CubeCraftLabs is the workshop, prototyping and R&D branch of CubeCraft Creations. Where Creations is the storefront of finished handmade goods (warm, rounded, gradient, Nunito), Labs is the bench where things get designed and built — <span style="color:#e5c07b">technical, dark, precise</span>. It shares the cube DNA and the CubeCraft name; everything else deliberately diverges to signal "this is where the making happens."</div>
+  </div>
+
+  <!-- ========== PALETTE ========== -->
+  <div style="padding:34px 0; border-bottom:1px solid #2a2a2a">
+    <div style="font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#e5c07b; margin-bottom:20px">02 · Palette</div>
+    <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:14px">
+      <sc-for list="{{ swatches }}" as="sw" hint-placeholder-count="8">
+        <div style="border:1px solid #2a2a2a">
+          <div style="height:72px; background:{{ sw.css }}; border-bottom:1px solid #2a2a2a"></div>
+          <div style="padding:10px 12px; display:flex; flex-direction:column; gap:3px">
+            <div style="font-size:12px; font-weight:700; color:#d4d4d4">{{ sw.name }}</div>
+            <div style="font-size:11px; color:#6b6b6b">{{ sw.hex }}</div>
+            <div style="font-size:10px; color:#6b6b6b; letter-spacing:0.04em">{{ sw.role }}</div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- ========== TYPE ========== -->
+  <div style="padding:34px 0; border-bottom:1px solid #2a2a2a">
+    <div style="font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#e5c07b; margin-bottom:20px">03 · Typography</div>
+    <div style="display:flex; flex-direction:column; gap:18px">
+      <div style="display:flex; align-items:baseline; gap:20px; flex-wrap:wrap">
+        <div style="font-size:11px; color:#6b6b6b; width:150px; flex:none">Family</div>
+        <div style="font-size:15px; color:#d4d4d4">JetBrains Mono — loaded from Google Fonts</div>
+      </div>
+      <div style="display:flex; align-items:baseline; gap:20px; flex-wrap:wrap">
+        <div style="font-size:11px; color:#6b6b6b; width:150px; flex:none">Wordmark</div>
+        <div style="font-weight:800; font-size:24px; letter-spacing:0.02em; color:#d4d4d4">CubeCraft<span style="color:#e5c07b">Labs</span><span style="display:inline-block; width:12px; height:24px; background:#e5c07b; margin-left:7px; vertical-align:-3px"></span></div>
+      </div>
+      <div style="display:flex; align-items:baseline; gap:20px; flex-wrap:wrap">
+        <div style="font-size:11px; color:#6b6b6b; width:150px; flex:none">Weights</div>
+        <div style="display:flex; gap:22px; align-items:baseline"><span style="font-weight:400; color:#d4d4d4">400 body</span><span style="font-weight:500; color:#d4d4d4">500 label</span><span style="font-weight:700; color:#d4d4d4">700 heading</span><span style="font-weight:800; color:#d4d4d4">800 display</span></div>
+      </div>
+      <div style="display:flex; align-items:baseline; gap:20px; flex-wrap:wrap">
+        <div style="font-size:11px; color:#6b6b6b; width:150px; flex:none">Rules</div>
+        <div style="font-size:14px; line-height:1.7; color:#d4d4d4; max-width:640px">Wordmark: weight 800, mixed-case, 0.02em tracking, "Labs" in gold, optional cursor block.<br>Caps labels & buttons: uppercase, 0.08em tracking.<br>Corners: square everywhere (border-radius 0).</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== CUBE GEOMETRY ========== -->
+  <div style="padding:34px 0; border-bottom:1px solid #2a2a2a">
+    <div style="font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#e5c07b; margin-bottom:8px">04 · Cube geometry</div>
+    <div style="font-size:13px; color:#6b6b6b; margin-bottom:24px; max-width:760px">One isometric cube drives every mark. viewBox 0 0 200 200 · top vertex (100,44) · shoulders (146,70)/(54,70) · waist (100,96) · base (100,150). Rendered as a gold wireframe (assembled) or exploded for the primary.</div>
+    <div style="display:flex; gap:20px; flex-wrap:wrap; align-items:center">
+      <div style="border:1px solid #2a2a2a; padding:24px; display:flex; flex-direction:column; align-items:center; gap:12px">
+        <svg width="120" height="120" viewBox="0 0 200 200" fill="none" style="display:block">
+          <polygon points="100,44 146,70 100,96 54,70" fill="#e5c07b" fill-opacity="0.10"></polygon>
+          <polygon points="54,70 100,96 100,150 54,124" fill="#e5c07b" fill-opacity="0.045"></polygon>
+          <g stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter" stroke-linecap="butt">
+            <polygon points="100,44 146,70 100,96 54,70" fill="none"></polygon>
+            <line x1="146" y1="70" x2="146" y2="124"></line>
+            <line x1="100" y1="96" x2="100" y2="150"></line>
+            <line x1="54" y1="70" x2="54" y2="124"></line>
+            <line x1="54" y1="124" x2="100" y2="150"></line>
+            <line x1="146" y1="124" x2="100" y2="150"></line>
+          </g>
+        </svg>
+        <div style="font-size:11px; color:#6b6b6b; letter-spacing:0.04em">assembled</div>
+      </div>
+      <div style="border:1px solid #2a2a2a; padding:24px; display:flex; flex-direction:column; align-items:center; gap:12px">
+        <svg width="120" height="120" viewBox="0 0 200 200" fill="none" style="display:block">
+          <polygon points="100,26 144,51 100,76 56,51" fill="#e5c07b" fill-opacity="0.14" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+          <polygon points="44,80 88,105 88,157 44,132" fill="#e5c07b" fill-opacity="0.05" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+          <polygon points="156,80 112,105 112,157 156,132" fill="#e5c07b" fill-opacity="0.02" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+          <g stroke="#e5c07b" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="3 4" stroke-linecap="butt">
+            <line x1="100" y1="76" x2="100" y2="100"></line>
+            <line x1="88" y1="105" x2="97" y2="100"></line>
+            <line x1="112" y1="105" x2="103" y2="100"></line>
+          </g>
+        </svg>
+        <div style="font-size:11px; color:#6b6b6b; letter-spacing:0.04em">exploded · primary</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== LOCKUPS ========== -->
+  <div style="padding:34px 0; border-bottom:1px solid #2a2a2a">
+    <div style="font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#e5c07b; margin-bottom:20px">05 · Lockups & roles</div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px">
+
+      <!-- primary -->
+      <div style="border:1px solid #2a2a2a">
+        <div style="padding:9px 14px; border-bottom:1px solid #2a2a2a; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:#6b6b6b">Primary · exploded cube</div>
+        <div style="padding:38px; display:flex; flex-direction:column; align-items:center; gap:22px">
+          <svg width="130" height="130" viewBox="0 0 200 200" fill="none" style="display:block">
+            <polygon points="100,26 144,51 100,76 56,51" fill="#e5c07b" fill-opacity="0.14" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+            <polygon points="44,80 88,105 88,157 44,132" fill="#e5c07b" fill-opacity="0.05" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+            <polygon points="156,80 112,105 112,157 156,132" fill="#e5c07b" fill-opacity="0.02" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+            <g stroke="#e5c07b" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="3 4" stroke-linecap="butt">
+              <line x1="100" y1="76" x2="100" y2="100"></line>
+              <line x1="88" y1="105" x2="97" y2="100"></line>
+              <line x1="112" y1="105" x2="103" y2="100"></line>
+            </g>
+          </svg>
+          <div style="font-weight:800; font-size:20px; letter-spacing:0.02em; color:#d4d4d4">CubeCraft<span style="color:#e5c07b">Labs</span><span style="display:inline-block; width:10px; height:20px; background:#e5c07b; margin-left:6px; vertical-align:-2px"></span></div>
+        </div>
+      </div>
+
+      <!-- inline -->
+      <div style="border:1px solid #2a2a2a">
+        <div style="padding:9px 14px; border-bottom:1px solid #2a2a2a; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:#6b6b6b">Inline · monoline</div>
+        <div style="padding:38px; display:flex; align-items:center; justify-content:center; gap:14px; height:calc(100% - 38px); box-sizing:border-box">
+          <svg width="48" height="48" viewBox="0 0 200 200" fill="none" style="display:block; flex:none">
+            <polygon points="100,44 146,70 100,96 54,70" fill="#e5c07b" fill-opacity="0.10"></polygon>
+            <g stroke="#e5c07b" stroke-width="4.5" stroke-linejoin="miter" stroke-linecap="butt">
+              <polygon points="100,44 146,70 100,96 54,70" fill="none"></polygon>
+              <line x1="146" y1="70" x2="146" y2="124"></line>
+              <line x1="100" y1="96" x2="100" y2="150"></line>
+              <line x1="54" y1="70" x2="54" y2="124"></line>
+              <line x1="54" y1="124" x2="100" y2="150"></line>
+              <line x1="146" y1="124" x2="100" y2="150"></line>
+            </g>
+          </svg>
+          <div style="font-weight:800; font-size:17px; letter-spacing:0.02em; color:#d4d4d4">CubeCraft<span style="color:#e5c07b">Labs</span></div>
+          <div style="width:8px; height:18px; background:#e5c07b; flex:none"></div>
+        </div>
+      </div>
+
+      <!-- badge -->
+      <div style="border:1px solid #2a2a2a">
+        <div style="padding:9px 14px; border-bottom:1px solid #2a2a2a; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:#6b6b6b">Badge · grid stamp</div>
+        <div style="padding:32px; display:flex; flex-direction:column; align-items:center; gap:18px">
+          <svg width="112" height="112" viewBox="0 0 200 200" fill="none" style="display:block">
+            <g stroke="#333" stroke-width="0.7">
+              <line x1="20" y1="20" x2="180" y2="20"></line><line x1="20" y1="52" x2="180" y2="52"></line><line x1="20" y1="84" x2="180" y2="84"></line><line x1="20" y1="116" x2="180" y2="116"></line><line x1="20" y1="148" x2="180" y2="148"></line><line x1="20" y1="180" x2="180" y2="180"></line>
+              <line x1="20" y1="20" x2="20" y2="180"></line><line x1="52" y1="20" x2="52" y2="180"></line><line x1="84" y1="20" x2="84" y2="180"></line><line x1="116" y1="20" x2="116" y2="180"></line><line x1="148" y1="20" x2="148" y2="180"></line><line x1="180" y1="20" x2="180" y2="180"></line>
+            </g>
+            <g stroke="#e5c07b" stroke-width="1" stroke-opacity="0.55">
+              <line x1="100" y1="10" x2="100" y2="26"></line><line x1="100" y1="174" x2="100" y2="190"></line><line x1="10" y1="100" x2="26" y2="100"></line><line x1="174" y1="100" x2="190" y2="100"></line>
+            </g>
+            <polygon points="100,48 144,73 100,98 56,73" fill="#e5c07b" fill-opacity="0.12"></polygon>
+            <polygon points="56,73 100,98 100,150 56,125" fill="#e5c07b" fill-opacity="0.05"></polygon>
+            <g stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter" stroke-linecap="butt">
+              <polygon points="100,48 144,73 100,98 56,73" fill="none"></polygon>
+              <line x1="144" y1="73" x2="144" y2="125"></line><line x1="100" y1="98" x2="100" y2="150"></line><line x1="56" y1="73" x2="56" y2="125"></line><line x1="56" y1="125" x2="100" y2="150"></line><line x1="144" y1="125" x2="100" y2="150"></line>
+            </g>
+          </svg>
+          <div style="display:flex; align-items:baseline; gap:0">
+            <div style="font-weight:800; font-size:15px; letter-spacing:0.02em; color:#d4d4d4">CubeCraft</div>
+            <div style="font-weight:800; font-size:15px; letter-spacing:0.02em; color:#e5c07b; border:1.5px solid #e5c07b; padding:0 6px">Labs</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- web header -->
+      <div style="border:1px solid #2a2a2a">
+        <div style="padding:9px 14px; border-bottom:1px solid #2a2a2a; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:#6b6b6b">Web header · terminal</div>
+        <div style="padding:28px; display:flex; align-items:center; justify-content:center; height:calc(100% - 38px); box-sizing:border-box">
+          <div style="border:1px solid #333; width:100%">
+            <div style="display:flex; align-items:center; gap:7px; padding:8px 12px; border-bottom:1px solid #2a2a2a">
+              <div style="width:7px; height:7px; background:#e06c75"></div>
+              <div style="width:7px; height:7px; background:#e5c07b"></div>
+              <div style="width:7px; height:7px; background:#98c379"></div>
+              <div style="font-size:10px; letter-spacing:0.08em; color:#6b6b6b; margin-left:auto">~/labs</div>
+            </div>
+            <div style="padding:20px 18px; display:flex; flex-direction:column; gap:10px">
+              <div style="font-size:12px; color:#6b6b6b"><span style="color:#98c379">$</span> make cubecraft <span style="color:#e5c07b">--labs</span></div>
+              <div style="font-weight:800; font-size:18px; color:#d4d4d4">CubeCraft<span style="color:#e5c07b">Labs</span><span style="display:inline-block; width:9px; height:17px; background:#e5c07b; margin-left:6px; vertical-align:-2px"></span></div>
+              <div style="font-size:11px; color:#98c379">✓ build complete</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== DO / DON'T ========== -->
+  <div style="padding:34px 0 8px">
+    <div style="font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#e5c07b; margin-bottom:20px">06 · Usage</div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px">
+      <div style="border:1px solid #2a2a2a; border-left:2px solid #98c379; padding:20px 22px">
+        <div style="font-size:12px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#98c379; margin-bottom:14px">Do</div>
+        <div style="display:flex; flex-direction:column; gap:10px; font-size:13px; line-height:1.5; color:#d4d4d4">
+          <div>Keep the cube gold on a charcoal (#1a1a1a) ground.</div>
+          <div>Set all type in JetBrains Mono, square corners.</div>
+          <div>Reserve gold for the mark, "Labs", accents & active states.</div>
+          <div>Use the exploded cube as the primary; assembled cube elsewhere.</div>
+        </div>
+      </div>
+      <div style="border:1px solid #2a2a2a; border-left:2px solid #e06c75; padding:20px 22px">
+        <div style="font-size:12px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#e06c75; margin-bottom:14px">Don't</div>
+        <div style="display:flex; flex-direction:column; gap:10px; font-size:13px; line-height:1.5; color:#d4d4d4">
+          <div>Don't apply the Creations blue→purple gradient or Nunito.</div>
+          <div>Don't round the corners or use a light background.</div>
+          <div>Don't fill the "Labs" block solid gold (outline only).</div>
+          <div>Don't recolor the cube or add faces beyond the three visible.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      swatches: [
+        { name: "Charcoal", hex: "#1a1a1a", css: "#1a1a1a", role: "background" },
+        { name: "Gold", hex: "#e5c07b", css: "#e5c07b", role: "accent / mark" },
+        { name: "Light gray", hex: "#d4d4d4", css: "#d4d4d4", role: "text" },
+        { name: "Muted", hex: "#6b6b6b", css: "#6b6b6b", role: "secondary text" },
+        { name: "Border", hex: "#2a2a2a", css: "#2a2a2a", role: "borders / lines" },
+        { name: "Grid", hex: "#333333", css: "#333333", role: "grid / dividers" },
+        { name: "Success", hex: "#98c379", css: "#98c379", role: "green" },
+        { name: "Error", hex: "#e06c75", css: "#e06c75", role: "red" }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

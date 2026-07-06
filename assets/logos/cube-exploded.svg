@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
+  <polygon points="100,26 144,51 100,76 56,51" fill="#e5c07b" fill-opacity="0.14" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+  <polygon points="44,80 88,105 88,157 44,132" fill="#e5c07b" fill-opacity="0.05" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+  <polygon points="156,80 112,105 112,157 156,132" fill="#e5c07b" fill-opacity="0.02" stroke="#e5c07b" stroke-width="2.4" stroke-linejoin="miter"></polygon>
+  <g stroke="#e5c07b" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="3 4" stroke-linecap="butt">
+    <line x1="100" y1="76" x2="100" y2="100"></line>
+    <line x1="88" y1="105" x2="97" y2="100"></line>
+    <line x1="112" y1="105" x2="103" y2="100"></line>
+  </g>
+  <g stroke="#e5c07b" stroke-width="1" stroke-opacity="0.22">
+    <polygon points="100,82 117,91 100,100 83,91" fill="none"></polygon>
+    <line x1="83" y1="91" x2="83" y2="110"></line>
+    <line x1="117" y1="91" x2="117" y2="110"></line>
+    <line x1="100" y1="100" x2="100" y2="119"></line>
+    <line x1="83" y1="110" x2="100" y2="119"></line>
+    <line x1="117" y1="110" x2="100" y2="119"></line>
+  </g>
+</svg>
